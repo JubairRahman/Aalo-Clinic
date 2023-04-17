@@ -46,25 +46,39 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="index.html">SuSastho</a></h1>
-    
+  
+      <h3 class="logo me-auto"><a href="index.html"><img src="img/doctors/logoAalo.png" alt=""></a></h3>
+  
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="nav-link scrollto">About <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="#about-us">Partners |</a></li> 
+              <li><a class="nav-link scrollto" href="#our-team">Beneficiaries |</a></li>
+              <li><a class="nav-link scrollto" href="#testimonials">Community |</a></li>
+              <li><a class="nav-link scrollto" href="#testimonials">Contact</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>       
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+          <li class="dropdown">
+            <a href="#" class="nav-link scrollto">Clinics <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="#contact-us">Clinic Events |</a></li>
+              <li><a class="nav-link scrollto" href="#location">Location</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
+  
       <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Registration</span></a>
-
+  
     </div>
-  </header><!-- End Header -->
-
+  </header>
+  
   <!-- ======= Home Section ======= -->
   <section id="home" class="d-flex align-items-center">
     <div class="container">
@@ -427,9 +441,34 @@
         </div>
       </div>
 
-      <!--Google map-->
-      <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=670&amp;height=363&amp;hl=en&amp;q=kist hospital&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.fnfgo.com/">FNF Mods</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:363px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:363px;}.gmap_iframe {height:363px!important;}</style></div>
+      <!-- GPT Code for Google map -->
+
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.124211963959!2d90.39056447395187!3d23.778590787696103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf4e7cbcc43f%3A0x7cc8114b2a6d99ab!2sCMED%20Health%20Ltd.!5e0!3m2!1sen!2sbd!4v1681711109129!5m2!1sen!2sbd" width="100%" height="363" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <a href="https://cmed.com.bd/">CMED Health</a>
+        </div>
+      </div>
       
+        <style>
+          .mapouter {
+            position:relative;
+            text-align:right;
+            width:100%;
+            height:363px;
+          }
+          .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            width:100%;
+            height:363px;
+          }
+          .gmap_iframe {
+            height:363px!important;
+          }
+        </style>
+      </div>
+      <!-- GPT Code end -->
       <div class="container">
         <div class="row mt-5">
 
@@ -522,17 +561,18 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Extra Web Course</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Navbar Tutorial</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Karail</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mirpur</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Dhalpur</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Shaympur</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Ershad Nagar</a></li>
+              <li><i class="bx bx-chevron-right"><a href="#">Narayanganj</a></i></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>A Daily Health or Clinic related quote or news. </p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -542,13 +582,70 @@
         </div>
       </div>
     </div>
+    <!-- gpt code -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-image">
+         <h5><img src="img/doctors/sewden.png" alt="Sweden Sverige"> </h5>
+        </div>
+        <div class="footer-image">
+         <h5> <img src="img/doctors/UnicefR-r.png" alt="unicef"> </h5>
+        </div>
+        <div class="footer-image">
+          <h5><img src="img/doctors/CMED-cloudR-r.png"alt="CMED"></h5>
+        </div>
+        <div class="footer-image">
+         <h5> <img src="img/doctors/naree-r.png" alt="nari maitree"></h5>
+        </div>
+        <div class="footer-image">
+        <h5>  <img src="img/doctors/PHDR.png" alt="PHD"></h5>
+        </div>
+      </div>
+    </footer>
+    <style>
+      .site-footer {
+  background-image: url(/img/doctors/fotterBG.jpg);
+  background-size: cover;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+ 
+  
+}
+.site-footer img {
+  height: 100px;
+  width: auto;
+  margin: 0 10px;
+
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-image {
+  width: calc(20% - 10px);
+  margin-bottom: 20px;
+}
+
+.footer-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+/* gpt code end */
+    </style>
 
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>PR-CARE</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="https://www.youtube.com/channel/UCc5GjlNTdSV4ZZCsX61mccg">SuSastho</a>
+        Customized by <span style="color: rgb(4, 156, 245); font-family: cursive, fantasy ; font-size: large;">Jubair Jubu</span> </a>
       </div>
     </div>
   </footer><!-- End Footer -->

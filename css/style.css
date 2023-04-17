@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 80px;
 }
 
 /**
@@ -141,6 +141,103 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Desktop Navigation 
 */
+
+/* GPT Code */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  position: relative;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+nav li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav a {
+  display: block;
+  padding: 0 10px;
+  color: #333;
+  font-size: 14px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+nav ul ul a {
+  line-height: 20px;
+  padding: 10px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav > ul > li {
+  float: left;
+  margin-right: 10px;
+}
+
+nav > ul > li:last-child {
+  margin-right: 0;
+}
+
+nav a:hover,
+nav a:focus {
+  outline: none;
+  color: #8e44ad;
+}
+
+nav ul ul li {
+  position: relative;
+}
+
+nav ul ul li:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+nav ul ul li:nth-child(odd) a {
+  background-color: #ffffff;
+}
+
+nav ul ul li:nth-child(even) a {
+  background-color: #ffffff;
+}
+
+.dropdown:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+/* GPT Code ends here */
 .navbar {
   padding: 0;
 }
