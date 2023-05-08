@@ -101,11 +101,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a {
-  color: #2c4964;
+  color: #2668a7;
 }
 
 #header .logo img {
-  max-height: 80px;
+  max-height: 50px;
 }
 
 /**
@@ -495,7 +495,8 @@ section {
 # Featured Services
 --------------------------------------------------------------*/
 .featured-services .icon-box {
-  padding: 30px;
+  padding: 45px;
+  padding-left: 1rem;
   position: relative;
   overflow: hidden;
   background: #fff;
@@ -535,9 +536,9 @@ section {
 }
 
 .featured-services .title {
-  font-weight: 700;
+  font-weight: 650;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .featured-services .title a {
@@ -1088,14 +1089,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #eeeeee;
+  background: #fdfdfd;
   padding: 0 0 30px 0;
   color: #555555;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #f6f6f6;
+  background: #fdfdfd;
   padding: 60px 0 30px 0;
 }
 
@@ -1260,3 +1261,123 @@ section {
   visibility: visible;
   opacity: 1;
 }
+
+/* code pen style */
+
+
+
+.containerc {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+/*  
+<div class="footer-container">
+<div class="footer-image">
+ <h5><img src="img/doctors/sewden.png" alt="Sweden Sverige"> </h5>
+</div>
+<div class="footer-image">
+ <h5> <img src="img/doctors/UnicefR-r.png" alt="unicef"> </h5>
+</div>
+<div class="footer-image">
+  <h5><img src="img/doctors/CMED-cloudR-r.png"alt="CMED"></h5>
+</div>
+<div class="footer-image">
+ <h5> <img src="img/doctors/nariii.png" alt="nari maitree"></h5>
+</div>
+<div class="footer-image">
+<h5>  <img src="img/doctors/PHDR.png" alt="PHD"></h5>
+</div>
+</div>*/
