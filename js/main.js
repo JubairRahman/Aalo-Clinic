@@ -155,3 +155,19 @@
    }
 
 })()
+
+// scroll js
+document.addEventListener("DOMContentLoaded", function() {
+  var counters = document.getElementsByClassName("purecounter");
+
+  // Loop through each counter element
+  for (var i = 0; i < counters.length; i++) {
+    var counterElement = counters[i];
+    var startValue = parseInt(counterElement.dataset.purecounterStart);
+    var endValue = parseInt(counterElement.dataset.purecounterEnd);
+    var duration = parseInt(counterElement.dataset.purecounterDuration);
+
+    // Initialize PureCounter
+    new PureCounter(counterElement, startValue, endValue, duration).start();
+  }
+});
