@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partners</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS for carousel and boxes */
+    .carousel-item {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .carousel-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; /* Adjust alignment as needed */
+      padding: 20px; /* Add padding to create space between boxes and carousel */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%; /* Adjust the width of the container as needed */
+      max-width: 1200px; /* Set a maximum width if desired */
+    }
+
+    .logo-box,
+    .content-box {
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo-box img {
+      max-width: 100%; /* Ensure the logo image fits inside the box */
+    }
+  </style>
+</head>
+<body>
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="path_to_image1.jpg" alt="Carousel Image 1" class="carousel-image">
+        <div class="box-container">
+          <div class="logo-box">
+            <img src="path_to_logo.png" alt="Logo">
+          </div>
+          <div class="content-box">
+            <h2>Welcome to Our Partners</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed massa nec sapien venenatis pellentesque. In eu felis eget leo pulvinar lobortis in at erat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="path_to_image2.jpg" alt="Carousel Image 2" class="carousel-image">
+        <div class="box-container">
+          <div class="logo-box">
+            <img src="path_to_logo.png" alt="Logo">
+          </div>
+          <div class="content-box">
+            <h2>Welcome to Our Partners</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed massa nec sapien venenatis pellentesque. In eu felis eget leo pulvinar lobortis in at erat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="path_to_image3.jpg" alt="Carousel Image 3" class="carousel-image">
+        <div class="box-container">
+          <div class="logo-box">
+            <img src="path_to_logo.png" alt="Logo">
+          </div>
+          <div class="content-box">
+            <h2>Welcome to Our Partners</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed massa nec sapien venenatis pellentesque. In eu felis eget leo pulvinar lobortis in at erat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

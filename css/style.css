@@ -389,6 +389,31 @@ nav ul ul li:nth-child(even) a {
   background-color: #f1f1f1;
 }
 
+/* login button css */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+
+.login-btn {
+  display: inline-block;
+  padding: 8px 25px;
+  background-color: #1977cc;
+  border: none;
+  border-radius: 45px;
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 14px;
+  /* font-weight: bold; */
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover{
+  background-color: #3fbbc0;
+  color: white;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
