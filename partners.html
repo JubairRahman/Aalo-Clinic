@@ -4,92 +4,192 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Partners</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+ 
   <style>
-    /* Custom CSS for carousel and boxes */
-    .carousel-item {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-    }
+  /* custom css */
+  :root {
+  --background-dark: #2d3548;
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
 
-    .carousel-image {
-      width: 100%;
-      height: auto;
-    }
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .box-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start; /* Adjust alignment as needed */
-      padding: 20px; /* Add padding to create space between boxes and carousel */
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 80%; /* Adjust the width of the container as needed */
-      max-width: 1200px; /* Set a maximum width if desired */
-    }
+html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
 
-    .logo-box,
-    .content-box {
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      padding: 20px;
-    }
+body {
+  height: 100;
+  overflow: hidden;
+}
 
-    .logo-box img {
-      max-width: 100%; /* Ensure the logo image fits inside the box */
-    }
+.hero-section {
+  align-items: flex-start;
+  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+
+@media (min-width: 540px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  list-style: none;
+  position: relative;
+}
+
+.card:before {
+  content: '';
+  display: block;
+  padding-bottom: 140%;
+  width: 100%;
+}
+
+.card__background {
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card:hover .card__background {
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .card__background {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content {
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 115px;
+}
+
+.card__logo {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  
+}
+
+.card__heading {
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: var(--spacing-s);
+}
+
+.card__description {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+
   </style>
 </head>
 <body>
-  <!-- Carousel -->
-  <div id="carouselExample" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="path_to_image1.jpg" alt="Carousel Image 1" class="carousel-image">
-        <div class="box-container">
-          <div class="logo-box">
-            <img src="path_to_logo.png" alt="Logo">
-          </div>
-          <div class="content-box">
-            <h2>Welcome to Our Partners</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed massa nec sapien venenatis pellentesque. In eu felis eget leo pulvinar lobortis in at erat.</p>
-          </div>
+  <section class="hero-section">
+    <div class="card-grid">
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+        <div class="card__content"> <br>
+          <div class="logo-container"> 
+            <img src="img/doctors/CMED-cloud.png" alt="Logo" class="card__logo">
+          </div> <br> <br>
+          <h3 class="card__heading">CMED</h3>
+          <br>
+          <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et expedita delectus temporibus ullam. Explicabo totam quia laboriosam quisquam aperiam itaque, impedit voluptas aspernatur officia porro in aliquid laudantium ipsa? Doloribus?</p>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="path_to_image2.jpg" alt="Carousel Image 2" class="carousel-image">
-        <div class="box-container">
-          <div class="logo-box">
-            <img src="path_to_logo.png" alt="Logo">
-          </div>
-          <div class="content-box">
-            <h2>Welcome to Our Partners</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed massa nec sapien venenatis pellentesque. In eu felis eget leo pulvinar lobortis in at erat.</p>
-          </div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+        <div class="card__content"> <br>
+          <div class="logo-container">
+            <img src="img/doctors/PHD.png" alt="Logo" class="card__logo">
+          </div> <br> <br>
+          <h3 class="card__heading">PHD</h3>
+          <br>
+          <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et expedita delectus temporibus ullam. Explicabo totam quia laboriosam quisquam aperiam itaque, impedit voluptas aspernatur officia porro in aliquid laudantium ipsa? Doloribus?</p>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="path_to_image3.jpg" alt="Carousel Image 3" class="carousel-image">
-        <div class="box-container">
-          <div class="logo-box">
-            <img src="path_to_logo.png" alt="Logo">
-          </div>
-          <div class="content-box">
-            <h2>Welcome to Our Partners</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed massa nec sapien venenatis pellentesque. In eu felis eget leo pulvinar lobortis in at erat.</p>
-          </div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+        <!-- <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div> -->
+        <div class="card__content"> <br>
+          <div class="logo-container">
+            <img src="img/Logo NM.png" alt="Logo" class="card__logo">
+          </div> <br> <br>
+          <h3 class="card__heading">Nari Maitree</h3>
+          <br>
+          <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et expedita delectus temporibus ullam. Explicabo totam quia laboriosam quisquam aperiam itaque, impedit voluptas aspernatur officia porro in aliquid laudantium ipsa? Doloribus?</p>
         </div>
-      </div>
+      </a>
     </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </section>
 </body>
 </html>
