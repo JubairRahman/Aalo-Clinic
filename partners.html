@@ -39,7 +39,7 @@ body {
   overflow: hidden;
 }
 
-.hero-section {
+/* .hero-section {
   align-items: flex-start;
   background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
   display: flex;
@@ -55,7 +55,32 @@ body {
   grid-row-gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
+} */
+
+/* ... existing styles ... */
+
+.hero-section {
+  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+  padding: var(--spacing-xxl) var(--spacing-l);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align content vertically */
+  min-height: 100vh; /* Use viewport height for minimum height */
 }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+  padding: var(--spacing-l); /* Add padding to center align cards */
+  box-sizing: border-box;
+}
+
+/* ... rest of the styles ... */
+
 
 @media (min-width: 540px) {
   .card-grid {
