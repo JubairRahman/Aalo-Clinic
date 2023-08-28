@@ -399,7 +399,7 @@ nav ul ul li:nth-child(even) a {
 .login-btn {
   display: inline-block;
   padding: 8px 25px;
-  background-color: #1977cc;
+  background-color: #0d53ea;
   border: none;
   border-radius: 45px;
   text-decoration: none;
@@ -410,8 +410,8 @@ nav ul ul li:nth-child(even) a {
 }
 
 .login-btn:hover{
-  background-color: #3fbbc0;
-  color: white;
+  background-color: #ecec09;
+  color: rgb(52, 50, 50);
 }
 
 /*--------------------------------------------------------------
