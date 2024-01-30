@@ -562,7 +562,7 @@ section {
   z-index: 1;
 }
 
-/* .featured-services .icon-box::before {
+.featured-services .icon-box::before {
   content: '';
   position: absolute;
   background: #d9f1f2;
@@ -572,7 +572,7 @@ section {
   top: 100%;
   transition: all 0.3s;
   z-index: -1;
-} */
+}
 
 .featured-services .icon-box:hover::before {
   background: #3fbbc0;
