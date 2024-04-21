@@ -1,224 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Partners</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <title>Desinic - Get Best UI Design</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="src=assets/images/logoAalo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
 
  
-  <style>
-  /* custom css */
-  :root {
-  --background-dark: #2d3548;
-  --text-light: rgba(255, 255, 255, 0.6);
-  --text-lighter: rgba(255, 255, 255, 0.9);
-  --spacing-s: 8px;
-  --spacing-m: 16px;
-  --spacing-l: 24px;
-  --spacing-xl: 32px;
-  --spacing-xxl: 64px;
-  --width-container: 1200px;
-}
-
-* {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-}
-
-body {
-  height: 100;
-  overflow: hidden;
-}
-
-/* .hero-section {
-  align-items: flex-start;
-  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
-  display: flex;
-  min-height: 100%;
-  justify-content: center;
-  padding: var(--spacing-xxl) var(--spacing-l);
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
-  max-width: var(--width-container);
-  width: 100%;
-} */
-
-/* ... existing styles ... */
-
-.hero-section {
-  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
-  padding: var(--spacing-xxl) var(--spacing-l);
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Align content vertically */
-  min-height: 100vh; /* Use viewport height for minimum height */
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
-  max-width: var(--width-container);
-  width: 100%;
-  padding: var(--spacing-l); /* Add padding to center align cards */
-  box-sizing: border-box;
-}
-
-/* ... rest of the styles ... */
+  </header>
 
 
-@media (min-width: 540px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 960px) {
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.card {
-  list-style: none;
-  position: relative;
-}
-
-.card:before {
-  content: '';
-  display: block;
-  padding-bottom: 140%;
-  width: 100%;
-}
-
-.card__background {
-  background-size: cover;
-  background-position: center;
-  border-radius: var(--spacing-l);
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform-origin: center;
-  transform: scale(1) translateZ(0);
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.card:hover .card__background {
-  transform: scale(1.05) translateZ(0);
-}
-
-.card-grid:hover > .card:not(:hover) .card__background {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-}
-
-.card__content {
-  left: 0;
-  padding: var(--spacing-l);
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.logo-container {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-  margin-left: 115px;
-}
-
-.card__logo {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-  
-}
-
-.card__heading {
-  color: var(--text-lighter);
-  font-size: 1.9rem;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  margin-bottom: var(--spacing-s);
-}
-
-.card__description {
-  color: #ffffff;
-  font-size: 1.2rem;
-  line-height: 1.4;
-}
 
 
-  </style>
-</head>
-<body>
-  <section class="hero-section">
-    <div class="card-grid">
-      <a class="card" href="#">
-        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-        <div class="card__content"> <br>
-          <div class="logo-container">
-            <img src="img/doctors/PHD.png" alt="Logo" class="card__logo">
-          </div> <br> <br>
-          <h3 class="card__heading">PHD</h3>
-          <br>
-          <p class="card__description">A leading organization in health, nutrition and population sector for more than 3 decades, and transformed from DONORS' Consortium led by FCDO to a national not-for-profit organization</p>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Who We Are</p>
+
+            <h2 class="h2 hero-title">To do what nobody else will do.</h2>
+
+            <p class="hero-text">
+              We are the team of health care to support people of all ages.
+              At Aalo Clinic, we prioritize patient-centered care, leveraging our medical expertise and advanced technology to provide comprehensive healthcare services. From routine check-ups to advanced treatments, we are committed to improving the health and well-being of our community. Our focus on wellness and prevention, coupled with compassionate support, ensures that every individual receives personalized attention and the highest quality of care throughout their healthcare journey. Our mission is to provide quality, patient-centered healthcare solutions that exceed our clients' expectations.
+            </p>
+
+            <button class="btn">Learn More</button>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="img/logoAalo.png" width="694" height="529" loading="lazy" alt="hero-banner"
+              class="w-100 banner-animation">
+          </figure>
+
         </div>
-      </a>
-      <a class="card" href="#">
-        <!-- <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); filter: blur(5px);"></div> -->
-         <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div> 
-        <div class="card__content"> <br>
-          <div class="logo-container"> 
-            <img src="img/doctors/CMED-cloud.png" alt="Logo" class="card__logo">
-          </div> <br> <br>
-          <h3 class="card__heading">CMED</h3>
-          <br>
-          <p class="card__description">CMED is a largest IoT enabled AI Driven Digital Healthcare Platform Developer in Bangladesh, developed and managed Integrated Digital Healthcare Platform(IDHP)</p>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="img/about1 2.jpeg" width="700" height="532" loading="lazy" alt="about banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title underline">What We Do</h2>
+
+            <p class="about-text">
+              At Aalo Clinic, we prioritize patient-centered care, leveraging our medical expertise and advanced technology to provide comprehensive healthcare services. From routine check-ups to advanced treatments, we are committed to improving the health and well-being of our community. Our focus on wellness and prevention, coupled with compassionate support, ensures that every individual receives personalized attention and the highest quality of care throughout their healthcare journey.
+            </p>
+
+            <p class="about-text">
+              Grow into a fully sustainable healthcare social enterprise dedicated to better human lives
+            </p>
+
+            <ul class="stats-list">
+
+              <li class="stats-card">
+                <p class="h3 stats-title">6</p>
+
+                <p class="stats-text">Served Places</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">23</p>
+
+                <p class="stats-text">Services</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">2</p>
+
+                <p class="stats-text">Years Completed</p>
+              </li>
+
+            </ul>
+
+          </div>
+
         </div>
-      </a>
-      
-      <a class="card" href="#">
-        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-        <!-- <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div> -->
-        <div class="card__content"> <br>
-          <div class="logo-container">
-            <img src="img/Logo NM.png" alt="Logo" class="card__logo">
-          </div> <br> <br>
-          <h3 class="card__heading">Nari Maitree</h3>
-          <br>
-          <div class="card__description">Trusted partner of PHD since 1989, and a pioneer organization in health, nutrition and population sector with 2 decades of Experiences in operating URBAN PHC Clinic</div>
-        </div>
-      </a>
-    </div>
-  </section>
-  ,<style>
+      </section>
+    </article>
+  </main>
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+<style>
     /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
@@ -569,8 +488,8 @@ pointer-events: all;
 \*-----------------------------------*/
 
 .hero {
-background-image: url("../images/hero-bg-bottom.png"),
-                  url("../images/hero-bg.png"),
+background-image: url("img/hero-bg-bottom.png"),
+                  url("img/hero-bg.png"),
                   var(--gradient-1);
 background-repeat: no-repeat, no-repeat, no-repeat;
 background-position: -280px bottom, center, center;
@@ -708,212 +627,6 @@ transition: var(--transition-1);
 color: var(--white);
 background-color: var(--winter-sky);
 }
-
-
-
-
-
-/*-----------------------------------*\
-#FEATURE
-\*-----------------------------------*/
-
-.features-list > li:first-child { margin-block-end: 30px; }
-
-.features-card {
-display: flex;
-align-items: flex-start;
-gap: 20px;
-}
-
-.features-card .icon {
-background-image: var(--gradient-1);
-background-size: 200%;
-color: var(--white);
-min-width: max-content;
-max-width: max-content;
-font-size: 36px;
-padding: 22px;
-border-radius: 50%;
-}
-
-.features-card .icon ion-icon { --ionicon-stroke-width: 20px; }
-
-.features-card .title { margin-block-end: 10px; }
-
-.features-banner { margin-block: 40px; }
-
-.features-banner > img {
-max-width: max-content;
-margin-inline: auto;
-}
-
-
-
-
-
-/*-----------------------------------*\
-#BLOG
-\*-----------------------------------*/
-
-.blog { padding-block-end: 120px; }
-
-.blog-list {
-display: grid;
-gap: 30px;
-}
-
-.blog-card {
-padding: 20px;
-box-shadow: var(--shadow);
-border-radius: var(--radius-12);
-}
-
-.blog-card .banner {
-border-radius: var(--radius-12);
-overflow: hidden;
-margin-block-end: 15px;
-}
-
-.blog-card .banner img { transition: var(--transition-2); }
-
-.blog-card .banner a:is(:hover, :focus) img { transform: scale(1.1); }
-
-.blog-card .title {
-color: var(--st-patricks-blue);
-font-size: var(--fs-6);
-line-height: 1.2;
-margin-block-end: 15px;
-}
-
-.blog-card .title > a { color: inherit; }
-
-.blog-card .title > a:is(:hover, :focus) { color: var(--razzmatazz); }
-
-.blog-card .text { margin-block-end: 15px; }
-
-.blog-card .meta {
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 15px;
-font-size: var(--fs-8);
-color: var(--purple-navy);
-font-weight: var(--fw-500);
-padding-block-end: 10px;
-}
-
-.blog-card .meta ion-icon {
-color: var(--winter-sky);
-font-size: 22px;
---ionicon-stroke-width: 35px;
-}
-
-.publish-date,
-.comment {
-display: flex;
-align-items: center;
-gap: 8px;
-}
-
-.comment {
-color: inherit;
-margin-inline-start: auto;
-}
-
-
-
-
-
-/*-----------------------------------*\
-#FOOTER
-\*-----------------------------------*/
-
-.footer { font-size: var(--fs-8); }
-
-.footer a { color: inherit; }
-
-.footer-top {
-background-image: url("../images/footer-bg.png"), var(--gradient-1);
-background-repeat: no-repeat;
-background-size: auto, 200%;
-background-position: center, center;
-color: var(--white);
-}
-
-.footer-brand { margin-block-end: 30px; }
-
-.footer-brand .logo {
-font-weight: var(--fw-700);
-margin-block-end: 15px;
-}
-
-.footer-brand .text {
-font-size: var(--fs-8);
-margin-block-end: 20px;
-}
-
-.social-list {
-display: flex;
-justify-content: flex-start;
-align-items: center;
-gap: 10px;
-}
-
-.footer-top .social-link {
-background-color: var(--white);
-color: var(--winter-sky);
-font-size: 18px;
-padding: 8px;
-border-radius: 50%;
-}
-
-.footer-top .social-link:is(:hover, :focus) {
-background-image: var(--gradient-2);
-color: var(--white);
-}
-
-.footer-list:not(:last-child) { margin-block-end: 25px; }
-
-.footer-list-title {
-font-family: var(--ff-source-sans-pro);
-font-size: var(--fs-5);
-font-weight: var(--fw-700);
-margin-block-end: 15px;
-}
-
-.footer-link { padding-block: 5px; }
-
-:is(.footer-link, .footer-item-link):not(address):is(:hover, :focus) { text-decoration: underline; }
-
-.footer-item {
-display: flex;
-justify-content: flex-start;
-align-items: center;
-gap: 10px;
-padding-block: 10px;
-}
-
-.footer-item-icon {
-background-image: var(--gradient-2);
-padding: 13px;
-border-radius: 50%;
-}
-
-.footer-bottom {
-background-color: var(--space-cadet-2);
-padding: 20px;
-text-align: center;
-color: var(--white);
-}
-
-.copyright-link {
-display: inline-block;
-text-decoration: underline;
-}
-
-.copyright-link:is(:hover, :focus) { text-decoration: none; }
-
-
 
 
 
@@ -1270,6 +983,21 @@ transform: translateY(-15px);
 .footer-brand { grid-column: auto; }
 
 }
-  </style>
+</style>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
