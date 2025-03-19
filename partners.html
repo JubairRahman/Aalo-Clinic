@@ -60,7 +60,7 @@ body {
 /* ... existing styles ... */
 
 .hero-section {
-  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+  background-image: linear-gradient(15deg, #40acef 0%, #40acef 150%);
   padding: var(--spacing-xxl) var(--spacing-l);
   display: flex;
   justify-content: center;
@@ -181,31 +181,93 @@ body {
   <section class="hero-section">
     <div class="card-grid">
       <a class="card" href="#">
-        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1729364909292-ca53e10f16ea?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"></div>
         <div class="card__content"> <br>
           <div class="logo-container">
             <img src="img/doctors/PHD.png" alt="Logo" class="card__logo">
-          </div> <br> <br>
+          </div> <br> <br> <br>
+
           <h3 class="card__heading">PHD</h3>
-          <br>
+          
           <p class="card__description">A leading organization in health, nutrition and population sector for more than 3 decades, and transformed from DONORS' Consortium led by FCDO to a national not-for-profit organization</p>
+          <br>
+          <br>
+          <br>
+          <br> <br>
+
+          <button class="read-more-btn" onclick="redirectToPage()">Read More</button>
+
+          <style>
+              .read-more-btn {
+                  background-color: rgba(255, 255, 255, 0);
+                  color: #ffffff; /* Blue text */
+                  border: 2px solid #14365b;
+                  padding: 10px;
+                  cursor: pointer;
+                  width: 40%;
+                  border-radius: 5px;
+                  margin-top: 10px;
+                  transition: 0.3s;
+                  font-weight: lighter;
+                  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              }
+          
+              .read-more-btn:hover {
+                  background-color: #14365b;
+                  color: white;
+              }
+          </style>
+          
+          <script>
+              function redirectToPage() {
+                  window.location.href = "phd.html"; // Redirects to phd.html
+              }
+          </script>
         </div>
       </a>
       <a class="card" href="#">
         <!-- <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); filter: blur(5px);"></div> -->
-         <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div> 
+         <div class="card__background" style="background-image: url(https://plus.unsplash.com/premium_photo-1739423877537-59a160cb708f?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"></div> 
         <div class="card__content"> <br>
           <div class="logo-container"> 
             <img src="img/doctors/CMED-cloud.png" alt="Logo" class="card__logo">
           </div> <br> <br>
           <h3 class="card__heading">CMED</h3>
           <br>
-          <p class="card__description">CMED is a largest IoT enabled AI Driven Digital Healthcare Platform Developer in Bangladesh, developed and managed Integrated Digital Healthcare Platform(IDHP)</p>
+          <p class="card__description">CMED is a largest IoT enabled AI Driven Digital Healthcare Platform Developer in Bangladesh, developed and managed Integrated Digital Healthcare Platform(IDHP). <br>CMED democratizes access to health education, screening, diagnosis & intervention in the community with a sustainable pathway to care while reducing the digital divide. </p> <br>
+          <br>
+          <button class="read-more-btn" onclick="redirectToPage()">Read More</button>
+
+<style>
+    .read-more-btn {
+        background-color: white;
+        color: #40acef; /* Blue text */
+        border: 2px solid #40acef;
+        padding: 10px;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    .read-more-btn:hover {
+        background-color: #40acef;
+        color: white;
+    }
+</style>
+
+<script>
+    function redirectToPage() {
+        window.location.href = "phd.html"; // Redirects to phd.html
+    }
+</script>
         </div>
       </a>
       
       <a class="card" href="#">
-        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1555948150-52dadfc85530?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"></div>
         <!-- <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div> -->
         <div class="card__content"> <br>
           <div class="logo-container">
@@ -214,6 +276,35 @@ body {
           <h3 class="card__heading">Nari Maitree</h3>
           <br>
           <div class="card__description">Trusted partner of PHD since 1989, and a pioneer organization in health, nutrition and population sector with 2 decades of Experiences in operating URBAN PHC Clinic</div>
+          <br> <br>   <br> <br>  <br> <br>
+
+          <button class="read-more-btn" onclick="redirectToPage()">Read More</button>
+
+<style>
+    .read-more-btn {
+        background-color: white;
+        color: #40acef; /* Blue text */
+        border: 2px solid #40acef;
+        padding: 10px;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    .read-more-btn:hover {
+        background-color: #40acef;
+        color: white;
+    }
+</style>
+
+<script>
+    function redirectToPage() {
+        window.location.href = "phd.html"; // Redirects to phd.html
+    }
+</script>
         </div>
       </a>
     </div>
@@ -1272,4 +1363,9 @@ transform: translateY(-15px);
 }
   </style>
 </body>
+<script>
+  function redirectToPage() {
+      window.location.href = "phd.html"; // Redirects to phd.html
+  }
+</script>
 </html>
